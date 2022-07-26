@@ -1,12 +1,13 @@
 #!/bin/bash
-pacman -Syu
+sudo pacman -Syu
 
 # Install basic applications
-pacman -S \
-    curl firefox openssh openvpn neovim zsh xorg-server xorg-xinit xmonad xmobar dmenu alacritty picom feh lightdm
+sudo pacman -S curl firefox openssh openvpn neovim xorg-server xorg-xinit xmonad xmobar dmenu alacritty picom feh lightdm
 
 # Oh-My-Zsh
+sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf $HOME/.zshrc
 
 # Install configurations (dotfiles)
 echo ".cfg" >> $HOME/.gitignore
