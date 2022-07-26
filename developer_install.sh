@@ -3,9 +3,7 @@ pacman -Syu
 
 # Install basic applications
 pacman -S \
-    curl firefox openssh openvpn neovim zsh \
-    xorg-server xorg-xinit xmonad xmobar dmenu \
-    alacritty picom feh lightdm
+    curl firefox openssh openvpn neovim zsh xorg-server xorg-xinit xmonad xmobar dmenu alacritty picom feh lightdm
 
 # Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
