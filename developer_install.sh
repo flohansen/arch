@@ -1,12 +1,18 @@
 #!/bin/bash
 sudo pacman -Syu
 
+# Install yay package mananger
+git clone https://aur.archlinux.org/yay.git ~/yay
+cd ~/yay
+makepkg -si
+
 # Install basic applications
 sudo pacman -Sy curl firefox openssh openvpn neovim
 sudo pacman -Sy xorg-server
-sudo pacman -Sy xorg-xinit xmonad xmobar
+sudo pacman -Sy xorg-xinit xmonad xmonad-contrib xmobar
 sudo pacman -Sy dmenu alacritty picom feh lightdm
 sudo pacman -Sy nodejs npm
+yay -Sy nerd-fonts-jetbrains-mono
 
 # Oh-My-Zsh
 sudo pacman -Sy zsh
