@@ -16,6 +16,7 @@ yay -Sy nerd-fonts-jetbrains-mono
 
 # Enable LightDM
 sudo systemctl enable lightdm.service
+sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/g' /etc/lightdm/lightdm.conf
 
 # Oh-My-Zsh
 sudo pacman -Sy zsh
