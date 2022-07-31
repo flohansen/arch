@@ -8,8 +8,8 @@ makepkg -si
 
 # Install basic applications
 sudo pacman -Sy curl firefox openssh openvpn neovim
-sudo pacman -Sy xorg-server
-sudo pacman -Sy xorg-xinit xmonad xmonad-contrib xmobar
+sudo pacman -Sy xorg-server xorg-xinit xorg-xset
+sudo pacman -Sy xmonad xmonad-contrib xmobar
 sudo pacman -Sy dmenu alacritty picom feh lightdm lightdm-webkit2-greeter
 sudo pacman -Sy nodejs npm
 yay -Sy nerd-fonts-jetbrains-mono
